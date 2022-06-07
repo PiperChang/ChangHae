@@ -1,4 +1,4 @@
-import React, { Suspense } from 'react'
+import React, { Suspense, useState,useEffect } from 'react'
 import { Canvas, useFrame } from '@react-three/fiber'
 import { GLTFLoader } from 'three/examples/jsm/loaders/GLTFLoader';
 import { useLoader } from '@react-three/fiber';
@@ -8,6 +8,7 @@ import * as THREE from 'three'
 
 export default function Mainpage() {
   const rolls = useLoader(GLTFLoader, "/rolls.gltf")
+  
   return (
     <div style={{ backgroundColor: "Orange", height: '500px' }} >
       <div style={{ backgroundColor: "Orange", width: '50%', height:"100%" }}>
