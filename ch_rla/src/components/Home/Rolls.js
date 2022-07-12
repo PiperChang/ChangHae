@@ -13,7 +13,7 @@ export default function Model({ ...props }) {
   const group = useRef()
   const { nodes, materials } = useGLTF('/rolls.gltf')
   return (
-    <group ref={group} {...props} dispose={null}>
+    <group ref={group} {...props} dispose={null} position={[0,0,-5]}>
       <group rotation={[-Math.PI / 2, 0, 0]} scale={4}>
         <group rotation={[Math.PI / 2, 0, 0]}>
           <mesh geometry={nodes.defaultMaterial.geometry} material={materials.primary_paint_shad} />
