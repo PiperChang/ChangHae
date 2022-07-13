@@ -14,11 +14,14 @@ function DreamCar({ visible }: Props) {
   return (
     <Canvas
       gl={{ antialias: true, toneMapping: THREE.NoToneMapping }}
-      camera={{ fov: 25, position: [10, 10, 10] }}
+      camera={{ fov: 30, position: [0, 1.3 , 5] }}
       shadows
     >
       <Suspense fallback={null}>
-        <OrbitControls />
+        <OrbitControls 
+          maxPolarAngle={Math.PI /2}
+          autoRotate={visible}
+        />
         <Rolls />
         <mesh
           position={[0, -1.15, 3]}
@@ -42,6 +45,12 @@ function DreamCar({ visible }: Props) {
           color={'#00FFAB'}
         />
         {/* on */}
+        <pointLight
+          position={[1, 0.4, -0.8]}
+          intensity={1}
+          color={'blue'}
+          visible={visible}
+        />
         <spotLight
           angle={0.7}
           position={[0, 3, -3]}
