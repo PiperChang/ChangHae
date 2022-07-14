@@ -1,0 +1,13 @@
+.Intro{
+    white-space: normal;
+    margin-top: 100px;
+    line-height: 2em;
+}
+.Intro strong{
+    font-family: 'Times New Roman';
+    font-size: large;
+}
+.Intro button{
+    font-family: 'Times New Roman';
+    font-size: large;
+}

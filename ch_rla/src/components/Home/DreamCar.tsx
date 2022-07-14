@@ -10,14 +10,13 @@ interface Props {
 }
 
 function DreamCar({ visible }: Props) {
-  // const visible = true;
   return (
+    <Suspense fallback={<p>Loading....</p>}>
     <Canvas
       gl={{ antialias: true, toneMapping: THREE.NoToneMapping }}
       camera={{ fov: 30, position: [0, 1.3 , 5] }}
       shadows
     >
-      <Suspense fallback={null}>
         <OrbitControls 
           maxPolarAngle={Math.PI /2}
           autoRotate={visible}
@@ -95,8 +94,8 @@ function DreamCar({ visible }: Props) {
           distance={9}
           visible={visible}
         />
-      </Suspense>
     </Canvas>
+    </Suspense>
   );
 }
 export default DreamCar;

@@ -1,14 +1,19 @@
 import React, { useState } from 'react';
 import DreamCar from '../../components/Home/DreamCar';
+import Intro from '../../components/Home/Intro';
+import styles from './Home.module.css'
+
 export default function Home() {
   const [visible, setVisible] = useState(false)
 
   return (
-    <div>
-      <div style={{ height: '90vh' }}>
-        <DreamCar visible={visible}/>
+    <main>
+      <div className={styles.Home}>
+        <div className={styles.Car}>
+          {/* <DreamCar visible={visible}/> */}
+        </div>
+        <Intro visible={visible} setVisible={setVisible}/>
       </div>
-      <button onClick={() => setVisible(!visible)}>Turn on</button>
-    </div>
+    </main>
   );
 }
