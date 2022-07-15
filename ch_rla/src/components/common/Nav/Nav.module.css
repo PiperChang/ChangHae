@@ -1,6 +1,7 @@
 .Navigation {
     display: flex;
     justify-content: space-between;
+    background-color: var(--color-green);
 
     border-bottom: 2px solid;
 

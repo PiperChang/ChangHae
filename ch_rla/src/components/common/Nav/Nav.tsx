@@ -7,7 +7,7 @@ export default function Nav() {
     <nav className={styles.Navigation}>
       <h1>main</h1>
       <ul>
-        <Link to="/"><li>Work</li></Link>
+        <Link to="/Work"><li>Work</li></Link>
         <Link to="/"><li>Thoughts</li></Link>
         <Link to="/"><li>About</li></Link>
         <li>Love</li>

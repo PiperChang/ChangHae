@@ -1,23 +1,22 @@
 import Rolls from './Rolls';
-import React, { Suspense, useState, useEffect } from 'react';
-import { Canvas, useFrame } from '@react-three/fiber';
-import { Stars, OrbitControls, SpotLight, Circle } from '@react-three/drei';
+import React, { Suspense } from 'react';
+import { Canvas } from '@react-three/fiber';
+import { OrbitControls } from '@react-three/drei';
 import * as THREE from 'three';
-import { CircleBufferGeometry } from 'three';
-
+import styles from './DreamCar.module.css'
 interface Props {
   visible: boolean;
 }
 
 function DreamCar({ visible }: Props) {
-  // const visible = true;
   return (
+    <div className={styles.Car}>
+    <Suspense fallback={<p>Loading....</p>}>
     <Canvas
       gl={{ antialias: true, toneMapping: THREE.NoToneMapping }}
       camera={{ fov: 30, position: [0, 1.3 , 5] }}
       shadows
     >
-      <Suspense fallback={null}>
         <OrbitControls 
           maxPolarAngle={Math.PI /2}
           autoRotate={visible}
@@ -35,7 +34,7 @@ function DreamCar({ visible }: Props) {
         <pointLight
           position={[-1.5, 0.4, -0.8]}
           intensity={50}
-          distance={1}
+          distance={1} 
           color={'#00FFAB'}
         />
         <pointLight
@@ -95,8 +94,9 @@ function DreamCar({ visible }: Props) {
           distance={9}
           visible={visible}
         />
-      </Suspense>
     </Canvas>
+    </Suspense>
+    </div>
   );
 }
 export default DreamCar;
