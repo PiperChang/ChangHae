@@ -5,20 +5,3 @@
     align-content: center;
     display: inline-block;
 }
-
-/* .Home button.off {
-    background-color: red;
-}
-.Home button.on{
-    transition: opacity 0.5s ease;
-    opacity: 1;
-}
-
-.fadein {
-    background-color: red;
-}    
-
-.fadeout {    
-    transition: opacity 0.5s ease;
-    opacity: 0;
-} */
