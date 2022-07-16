@@ -10,12 +10,10 @@ export default function Home() {
 
   return (
     <main>
-      <Spinner></Spinner>
       <div className={styles.Home}>
         <div className={styles.Car}>
-          <DreamCar visible={visible} />
+          <DreamCar visible={visible} setVisible={setVisible} />
         </div>
-        <Intro visible={visible} setVisible={setVisible} />
       </div>
     </main>
   );

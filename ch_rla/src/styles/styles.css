@@ -8,7 +8,7 @@
 main {
     color: var(--main-font-color);
     max-width: var(--max-width);
-    margin: 0 auto;
+    margin: auto;
 }
 
 a{

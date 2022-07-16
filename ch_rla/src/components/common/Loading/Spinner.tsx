@@ -6,6 +6,7 @@ export default function Spinner() {
     <div className={styles.Container}>
     <div className={styles.Spinner}>
        </div>
+       Loading...
     </div>
   )
 }

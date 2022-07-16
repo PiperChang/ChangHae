@@ -2,17 +2,31 @@
     white-space: normal;
     position: relative;
     line-height: 2em;
-    display: flex;
-    justify-content: center;
-    height: 100vh;
-    margin-top : 70vh;
+    top: -30vh;
+    z-index: 2;
 }
+
 .Intro strong{
     font-family: 'Times New Roman';
     font-size: large;
 }
+
 .Intro button{
     font-family: 'Times New Roman';
     font-size: large;
-
 }
+.Intro button {
+    background-color: transparent;
+    font-family: 'Comfortaa', 'cursive';
+    font-size: 30px;
+    border: 3px solid var(--main-font-color) ;
+    padding: 10px 20px;
+    height: fit-content;
+    color: var(--main-font-color);
+}
+.Intro button:hover {
+    padding: 12px 22px;
+    color: var(--color-orange);
+    border-color: var(--color-orange);
+}
+

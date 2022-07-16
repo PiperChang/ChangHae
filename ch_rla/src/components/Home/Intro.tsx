@@ -1,4 +1,5 @@
 import React from 'react';
+import Rolls from '../../asset/Rolls_royce.svg'
 import styles from './Intro.module.css';
 
 interface Props {
@@ -10,6 +11,7 @@ export default function Intro({ visible, setVisible }: Props) {
   return (
     <>
       <div className={styles.Intro}>
+        {/* <Rolls> */}
         {visible ? (
           <>
             <strong>Kim Chang Hui </strong>
