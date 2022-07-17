@@ -1,0 +1,19 @@
+
+.Container {
+
+}
+
+.Container header {
+    padding: 3rem 0 2rem 0;
+    font-size: 7em;
+    border-bottom: 2px solid var(--color-orange);
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.ProjectsList {
+    display: grid;
+    
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 4em 3em;
+    padding: 3rem 0;
+}

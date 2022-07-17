@@ -3,7 +3,7 @@
     --color-black: #000000;
     --color-green: #1A4D2E;
     --color-orange: #FF9F29;
-    --max-width: 1048px;
+    --max-width: 75rem;
 }
 main {
     color: var(--main-font-color);

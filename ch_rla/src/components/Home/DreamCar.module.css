@@ -1,13 +1,14 @@
 .Container {
-    position: absolute;
-    top: 0;
-    width: 100vw;
-    text-align: center;
-  }
+  background-color: black;
+  position: fixed;
+  width: 100vw;
+  text-align: center;
+  height: 100vh;
+}
 
 .Car {
   position: relative;
-  height: 90vh;
+  height: 100vh;
   width: 100vw;
   z-index: 1;
 }
