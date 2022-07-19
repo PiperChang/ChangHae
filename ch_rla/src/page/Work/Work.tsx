@@ -4,15 +4,17 @@ import styles from './Work.module.css';
 import projects from '../../components/Work/Projects';
 
 export default function Work() {
-    console.log(projects);
-    
-    const projectList = projects.map((project) => <Project key={project.title} project={project} />);
+  console.log(projects);
+
+  const projectList = projects.map((project) => (
+    <Project key={project.title} project={project} />
+  ));
   return (
-    <main className={styles.Container}>
+    <>
       <header>Work</header>
-      <div className={styles.ProjectsList}>
-        {projectList}
-      </div>
-    </main>
+      <main className={styles.Container}>
+        <div className={styles.ProjectsList}>{projectList}</div>
+      </main>
+    </>
   );
 }
