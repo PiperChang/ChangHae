@@ -5,12 +5,35 @@
     --color-orange: #FF9F29;
     --max-width: 75rem;
 }
+
 main {
     color: var(--main-font-color);
     max-width: var(--max-width);
     margin: auto;
 }
 
-a{
+a {
     color: #FAF3E3;
+}
+
+footer {
+    position: absolute;
+    bottom: 1rem;
+    right: 1rem;
+    color: var(--main-font-color);
+    opacity: 0.5;
+}
+
+header {
+    color: var(--main-font-color);
+    padding: 3rem calc((100vw - var(--max-width)) / 2);
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 7rem;
+
+    border-width: 3px;
+    border-style: solid;
+    border-image:
+        linear-gradient(to left,
+            var(--color-orange),
+            rgba(0, 0, 0, 0)) 0 0 100% 0;
 }

@@ -30,12 +30,3 @@ export default function Intro({ visible, setVisible }: Props) {
     </>
   );
 }
-
-{/* <strong>Kim Chang Hui </strong>
-is a front end developer based on Korea.
-<br />
-On this page, you can look around his Works.
-<br />
-You&apos;ll see what he&apos;s like.
-<br />
-Hope you like him. */}

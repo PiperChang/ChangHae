@@ -8,9 +8,9 @@ export default function Nav() {
       <h1>Goals</h1>
       <ul>
         <Link to="/Work"><li>Work</li></Link>
-        <Link to="/"><li>Thoughts</li></Link>
-        <Link to="/"><li>About</li></Link>
-        <li>Love</li>
+        <Link to="/Thoughts"><li>Thoughts</li></Link>
+        <Link to="/About"><li>About</li></Link>
+        <Link to="/Comment"><li>Comment</li></Link>
       </ul>
     </nav>
   );

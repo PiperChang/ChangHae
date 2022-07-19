@@ -1,7 +1,7 @@
 .Container {
     display: grid;
     grid-template-columns: 1fr 20px;
-    grid-template-areas: 
+    grid-template-areas:
         "img img"
         "title icon"
         "desc .";
@@ -12,10 +12,9 @@
 
 .Container h2 {
     grid-area: title;
-    font-family:'Times New Roman', Times, serif;
+    font-family: 'Times New Roman', Times, serif;
     font-size: xx-large;
     font-weight: bolder;
-
 }
 
 .Container p {
@@ -28,7 +27,8 @@
     height: 20px;
     grid-area: icon;
 }
-.gitHub img{
+
+.gitHub img {
     height: 100%;
     width: 100%;
 }
