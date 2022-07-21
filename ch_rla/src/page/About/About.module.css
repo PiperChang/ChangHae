@@ -3,49 +3,13 @@
     justify-content: space-between;    
 }
 
-.Profile {
-    width: 28rem;
-}
+
 .Container section img {
-    height: 25rem;
-    width: 25rem;
+    height: 35rem;
+    width: 35rem;
     border-radius: 50%;
     object-fit: cover;
     border: 1px solid var(--color-orange);
     padding: 7px;
     margin: 2rem 0;
 }
-
-.Intro {
-    font-size: large;    
-    line-height: 1.5em;
-}
-
-.Intro strong{
-    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    font-size: xx-large;
-    font-weight: bolder;
-}
-
-.Contact {
-    padding: 1rem 0;
-    margin: 2rem 0;
-    border-top: 1px solid var(--color-orange);
-}
-
-.Contact a {
-    padding: 0.2rem;
-    display: inline-block;
-    background-color: transparent;
-    border: 1px solid transparent;
-    border-radius: 50%;
-    color: var(--main-font-color);
-    box-sizing: border-box;
-    margin-right: 0.5rem; 
-}
-
-.Contact a:hover {
-    background-color: var(--main-font-color);
-    color: var(--color-green);
-}
-
