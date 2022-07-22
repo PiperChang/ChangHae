@@ -3,22 +3,23 @@ import cors from "cors";
 
 const PORT =  process.env.PORT || 5000
 
-
 class App {
        public application: express.Application;
        constructor() {
               this.application = express();
        }
 }
+
 const app = new App().application;
 
 app.use(express.static('build'))
 app.use(cors());
+
 app.get("/", (req: Request, res: Response) => {
        res.sendFile(__dirname + '/build/index.html');
 })
 
-app.get('/data/1', (req: Request, res: Response) => {
+app.get('/comment', (req: Request, res: Response) => {
        res.json({
               id: 1,
               name: 'pepper',
