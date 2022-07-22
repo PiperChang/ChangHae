@@ -73,7 +73,7 @@ export default function Likes() {
       onMouseEnter={() => setDisplayOn(idx)}
       onMouseLeave={() => setDisplayOn(-1)}
     >
-      {displayOn == idx ? <img src={like.img} style={{left:(coords.x + 400), top:coords.y + 50}}/> : <></>}
+      {displayOn == idx ? <img src={like.img} style={{left:(coords.x), top:(coords.y - 100)}}/> : <></>}
       <h3>{like.title}</h3>
       <p>
         {like.author}, {like.year}

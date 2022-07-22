@@ -1,0 +1,30 @@
+{
+  "name": "changhae",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "apt": "^0.0.2",
+    "underscore": "^1.13.4"
+  },
+  "devDependencies": {
+    "typescript": "^4.7.4"
+  },
+  "scripts": {
+    "client-build": "cd client && npm ci && npm run build && cd ../",
+    "server-build": "cd server && npm ci --dev && npm run build && cd ../",
+    "prebuild": "npm run client-build && npm run server-build && mv ./client/build ./server/dist",
+    "start": "cd server && npm run start",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/PiperChang/ChangHae.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/PiperChang/ChangHae/issues"
+  },
+  "homepage": "https://github.com/PiperChang/ChangHae#readme"
+}
