@@ -5,11 +5,11 @@
 
 
 .Container section img {
-    height: 35rem;
-    width: 35rem;
+    height: 35em;
+    width: 35em;
     border-radius: 50%;
     object-fit: cover;
     border: 1px solid var(--color-orange);
     padding: 7px;
-    margin: 2rem 0;
+    margin: 2em 0;
 }

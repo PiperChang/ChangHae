@@ -9,7 +9,6 @@ import About from './page/About/About';
 
 import './styles/reset.css';
 import './styles/styles.css';
-import Thoughts from './page/Thoughts/Thoughts';
 
 function App() {
   return (
@@ -20,7 +19,6 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/Comment" element={<Comment />} />
           <Route path="/About" element={<About />} />
-          <Route path="/Thoughts" element={<Thoughts />} />
           <Route path="/Work" element={<Work />} />
         </Routes>
         <footer className='copyright'>© ChangHee Kim(PiperChang). All rights reserved.</footer>

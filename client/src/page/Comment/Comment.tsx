@@ -2,7 +2,6 @@ import React, { useEffect, useState } from 'react';
 import axios from 'axios';
 
 function Comment() {
-  // 현재 보는 중인 페이지
   const [pageNum, setPageNum] = useState(1);
   const [comments, setComments] = useState<string[]>([]); // 전체 Comments
   const [commentsOnPage, setCommentsOnPage] = useState<string[]>([]); // 현 페이지의 코멘트
@@ -20,6 +19,7 @@ function Comment() {
   //   setCommentsOnPage(comments.slice(pageNum * 10, pageNum * 10 + 10));
   // }, [comments, pageNum]);
   // const pages = [1,2,3,4,5,6,7,8,9,10]
+
   const pageButtons = [...Array(10)].map((num, idx) => {
     const page = (pageNum % 10) + idx;
     return (

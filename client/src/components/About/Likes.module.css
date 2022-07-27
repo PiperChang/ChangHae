@@ -1,9 +1,9 @@
 .Container {
-    width: 40rem;
-    padding :2rem 1rem;
+    width: 40em;
+    /* padding :2em 1em; */
 }
 .Container div{
-    margin: 2rem 0;
+    margin: 2em 0;
 }
 
 .Container h3{
@@ -12,13 +12,13 @@
 }
 
 .Container p {
-    line-height: 3rem;
+    line-height: 2em;
     font-size: large;
 }
 
 .Container div img{
     position: absolute;
-    width: 20rem;
+    width: 20em;
     height: 30rem;
     padding: 5px;
     border: 3px solid var(--color-orange);
