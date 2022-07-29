@@ -11,13 +11,10 @@ export default function Profile() {
       <img src={profile} alt="Profile picture" />
       <div className={styles.Intro}>
         <strong>Kim Chang Hui </strong>
-        <br />
         is a software engineer based on Korea.
-        <br />
         <br />
         He loves many things. You&apos;ll
         see what he likes.
-        <br />
         <br />
         Hope you enjoy it too.
       </div>

@@ -29,7 +29,8 @@ header {
     color: var(--main-font-color);
     padding: 3rem calc((100vw - var(--max-width)) / 2);
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    font-size: 7rem;
+    font-size: 6em;
+    font-weight: bold;
 
     border-width: 3px;
     border-style: solid;

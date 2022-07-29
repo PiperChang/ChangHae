@@ -14,15 +14,17 @@
 .Navigation li {
     display: inline-block;
     text-align: center;
-    width: 80px;
+    padding: 0 5px;
     margin-top: 10px;
     height: 30px;
     color: antiquewhite;
     box-sizing: border-box;
+    font-weight:600;
 }
 
 .Navigation li:hover {
-    border-bottom: 5px solid var(--color-orange);
+    border-bottom: 3px solid var(--color-orange);
+    transition: border-bottom 0.3s;
 }
 
 .Navigation h1 {
@@ -31,4 +33,9 @@
     font-size: larger;
     font-weight: bolder;
     color: var(--color-orange);
+}
+
+.LoginButton:hover{
+    background-color: red;
+
 }
