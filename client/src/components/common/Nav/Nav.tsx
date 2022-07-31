@@ -1,7 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import styles from './Nav.module.css'
-import Login from '../../Login/Login';
 
 interface Props {
   handleLoginClick: () => void
@@ -16,7 +15,7 @@ export default function Nav({ handleLoginClick }:Props) {
         <Link to="/Work"><li>Work</li></Link>
         <Link to="/About"><li>About</li></Link>
         <Link to="/Comment"><li>Comment</li></Link>
-        <li className={styles.LoginButton}><button onClick={handleLoginClick}>Login</button></li>
+        <button onClick={handleLoginClick} className={styles.LoginButton}>Login</button>
       </ul>
     </nav>
   );

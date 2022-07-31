@@ -20,7 +20,7 @@ function App() {
     <div className="App">
       <BrowserRouter>
         <Nav handleLoginClick={handleLoginClick}/>
-        <Login isShowLogin={isShowLogin}/>
+        <Login isShowLogin={isShowLogin} handleLoginClick={handleLoginClick} />
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/Comment" element={<Comment />} />

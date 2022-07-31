@@ -19,7 +19,7 @@
     height: 30px;
     color: antiquewhite;
     box-sizing: border-box;
-    font-weight:600;
+    font-weight: 600;
 }
 
 .Navigation li:hover {
@@ -35,7 +35,21 @@
     color: var(--color-orange);
 }
 
-.LoginButton:hover{
-    background-color: red;
+.LoginButton {
+    cursor: pointer;
+    border: 2px solid var(--main-font-color);
+    color: var(--main-font-color);
+    background-color: transparent;
+    border-radius: 4px;
+    font-weight: 600;
+    width: 60px;
+    margin: 0 10px;
+    padding: 5px 0;
+    transition: 0.3s;
+}
 
+.LoginButton:hover {
+    color: white;
+    background-color: var(--main-font-color);
+    color: var(--color-green);
 }
